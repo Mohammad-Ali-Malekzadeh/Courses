@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'vazir-fd';
+    src: url('../fonts/Vazirmatn-Black.woff2');
+}
+
+body {
+    font-family: 'vazir-fd';
+}
