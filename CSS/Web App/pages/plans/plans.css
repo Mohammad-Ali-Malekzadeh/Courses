@@ -1,0 +1,59 @@
+.background {
+    background: url('../../images/bg-image.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+main {
+    padding-top: 32px;
+}
+
+.plan {
+    width: 60%;
+    margin: 16px 0;
+    border: 2px solid #1565c0;
+    border-left: none;
+    text-align: right;
+    border-radius: 3px;
+    z-index: 0;
+}
+
+.plan a {
+    text-decoration: none;
+    color: #0d47a1;
+    display: block;
+    padding: 32px;
+}
+
+.plan__info {
+    padding: 16px;
+    border: 1px solid #1e88e8;
+    font-size: 15px;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#plus {
+     background: #bbdefb;
+}
+
+#free {
+    background: #e3f2fd;
+    float: right;
+    border: 2px solid #1565c0;
+    border-right: none;
+}
+
+#premium {
+    background: #1565c0;
+}
+
+#premium .plan__title {
+    color: #ffffff;
+}

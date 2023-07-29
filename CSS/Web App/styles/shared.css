@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'vazir-fd';
+    src: url('../fonts/Vazirmatn-Black.woff2');
+}
+
+body {
+    font-family: 'vazir-fd';
+    margin: 0;
+}
+
+.main-header {
+    width: 100%;
+    background: #1565c0;
+    padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__logo {
+    color: #e3f2fd;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 70px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #bbdefb;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: #ffffff;
+}
+
+.main-nav__item--account a{
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--account a:hover,
+.main-nav__item--account a:active {
+    color: #1565c0;
+}
+
+.main-footer {
+    background: #424242;
+    padding: 32px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #e0e0e0;
+}
