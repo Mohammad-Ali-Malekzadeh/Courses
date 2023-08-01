@@ -1,1 +1,28 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <meta name="description" content="page description here"/>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style>
+            body {
+                color: red;
+            }
+        </style>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("frame")
+                x.value = x.value.toUpperCase()
+            }
+        </script>
+    </head>
+    
+    <body>
+        This is a simple HTML document.
+        This Javascript function will capitalize my name:
+        Enter your name: <input type="text" id="frame" onchange="myFunction()">
+    </body>
+</html>
