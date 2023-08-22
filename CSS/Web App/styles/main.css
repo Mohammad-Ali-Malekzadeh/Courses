@@ -1,6 +1,6 @@
 #overview {
-    width: 100%;
-    height: 600px;
+    width: 100vw;
+    height: 50vh;
     background:
         linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
         url('../images/bg-image.jpg') center/cover no-repeat scroll;
@@ -97,4 +97,41 @@
     font-weight: bold;
     color: #1976d2;
     font-size: 18px;
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+    text-align: center;
+}
+
+.modal__action {
+    border: 1px #1565c0 solid;
+    background: #1565c0;
+    text-decoration: none;
+    color: #ffffff;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+.modal__action--neagative {
+    background: #d81b60;
+    border: #d81b60;
 }

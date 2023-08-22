@@ -2,12 +2,21 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0">
     <link rel="stylesheet" href="./styles/shared.css">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Web app</title>
 </head>
 
 <body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h1 class="modal__title">عنوان</h1>
+        <div class="modal__actions">
+            <a href="" class="modal__action">ثبت سفارش</a>
+            <button class="modal__action modal__action--neagative">انصراف</button>
+        </div>
+    </div>
     <header class="main-header">
         <div>
             <a href="#" class="main-header__logo ">
@@ -95,19 +104,19 @@
             </ul>
         </section>
     </main>
+    <footer class="main-footer">
+        <nav>
+            <ul class="main-footer__links">
+                <li class="main-footer__link">
+                    <a href="#">تماس</a>
+                </li>
+                <li class="main-footer__link">
+                    <a href="#">تعرفه ها</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./scripts/shared.js"></script>
 </body>
-
-<footer class="main-footer">
-    <nav>
-        <ul class="main-footer__links">
-            <li class="main-footer__link">
-                <a href="#">تماس</a>
-            </li>
-            <li class="main-footer__link">
-                <a href="#">تعرفه ها</a>
-            </li>
-        </ul>
-    </nav>
-</footer>
 
 </html>
