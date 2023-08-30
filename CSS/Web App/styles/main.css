@@ -1,6 +1,6 @@
 #overview {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background:
         linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
         url('../images/bg-image.jpg') center/cover no-repeat scroll;
@@ -17,11 +17,9 @@
 }
 
 .plan {
-    width: 30%;
+    width: 100%;
     padding: 16px;
     margin: 8px;
-    display: inline-block;
-    vertical-align: middle;
     text-align: center;
     color: #424242;
     box-shadow: 0 0 25px 5px rgb(0, 0, 0, 0.07);
@@ -134,4 +132,17 @@
 .modal__action--neagative {
     background: #d81b60;
     border: #d81b60;
+}
+
+@media (min-width: 40rem) {
+    #overview {
+        height: 50vh;
+    }
+
+    .plan {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        min-width: 12rem;
+    }
 }
