@@ -1,83 +1,130 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My First Web Page</title>
-        <meta name="description" content="page description here"/>
-        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <style>
-            body {
-                color: red;
-            }
-        </style>
+<head>
+    <title>My First Web Page</title>
+    <meta name="description" content="page description here" />
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script>
-            function myFunction() {
-                var x = document.getElementById("frame")
-                x.value = x.value.toUpperCase()
-            }
-        </script>
-    </head>
-    
-    <body>
+    <style>
+        /* body {
+            color: red;
+        } */
+    </style>
 
-        <p>This is a simple HTML document.</p>
-        This Javascript function will capitalize my name:
-        <p>Enter your name: <input type="text" id="frame" onchange="myFunction()"></p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("frame")
+            x.value = x.value.toUpperCase()
+        }
+    </script>
+</head>
 
-        <p>This is Line 1. <br/>This is Line 2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is Line 3.</p>
+<body>
 
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <h4> <font face="arial" size="22" color="blue"> Header 4 </font></h4>
+    <p>This is a simple HTML document.</p>
+    This Javascript function will capitalize my name:
+    <p>Enter your name: <input type="text" id="frame" onchange="myFunction()"></p>
 
-        <p>
-            <strong>Bold Text</strong> <br> 
-            <em>Italic Text</em> <br>
-            <u>Underlined Text</u> <br>
-            <strike>striked text</strike> <br>
-            <strong><em><u>Bold, Italic, Underlined Text</u></em></strong>
-        </p>
+    <p>This is Line 1. <br />This is Line 2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is Line 3.</p>
 
-        <h3>My Favorite Sports</h3>
-        <ul>
-            <li>Basketball</li>
-            <li>Soccer</li>
-            <li>Hockey</li>
-            <li>Football</li>
-        </ul>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>
+        <font face="arial" size="22" color="blue"> Header 4 </font>
+    </h4>
 
-        <h3>My Favorite Vacations</h3>
-        <ol>
-            <li>Miami, FL</li>
-            <li>New York, NY </li>
-            <li>Lost Vegas, NV</li>
-            <li>Houston, TX</li>
-        </ol>
+    <p>
+        <strong>Bold Text</strong> <br>
+        <em>Italic Text</em> <br>
+        <u>Underlined Text</u> <br>
+        <strike>striked text</strike> <br>
+        <strong><em><u>Bold, Italic, Underlined Text</u></em></strong>
+    </p>
 
-        <h1> Vacation Picturse </h1>
-        <p>
-            <!-- relative file for images: dose not include the full Path to the image source -->
-            <a href="https://www.miami.com"><img src="fl.jpg" width="333" height="250"></a>
-            <a href="https://www.lasvegas.com"><img src="lv.jpg" width="375" height="250"></a>
-            <a href="https://newyork.com"><img src="ny.jpg" width="374" height="250"></a>
+    <h3>My Favorite Sports</h3>
+    <ul>
+        <li>Basketball</li>
+        <li>Soccer</li>
+        <li>Hockey</li>
+        <li>Football</li>
+    </ul>
 
-            <!-- absolute file for images: include the full path/URL to the image Source -->
-            <a href="https://www.texas.com"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/White_and_yellow_flower.JPG" width="389" height="250"></a>
-        </p>
+    <h3>My Favorite Vacations</h3>
+    <ol>
+        <li>Miami, FL</li>
+        <li>New York, NY </li>
+        <li>Lost Vegas, NV</li>
+        <li>Houston, TX</li>
+    </ol>
 
-        <video width="100%" controls autoplay>
-            <source src="./success.mp4" type="video/mp4">
-            Your browser dose not support the video tag.
-        </video>
+    <h1> Vacation Picturse </h1>
+    <p>
+        <!-- relative file for images: dose not include the full Path to the image source -->
+        <a href="https://www.miami.com"><img src="fl.jpg" width="333" height="250"></a>
+        <a href="https://www.lasvegas.com"><img src="lv.jpg" width="375" height="250"></a>
+        <a href="https://newyork.com"><img src="ny.jpg" width="374" height="250"></a>
 
-        <p>
-            <a href="https://www.miami.com" target="_blank">miami.com</a><br>
-            <a href="https://www.lasvegas.com" target="_blank">lasvegas.com</a><br>
-            <a href="https://newyork.com" target="_blank">newyork.com</a><br>
-            <a href="https://newyork.com" target="_blank">newyork.com</a><br>
-        </p>
-    </body>
+        <!-- absolute file for images: include the full path/URL to the image Source -->
+        <a href="https://www.texas.com"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0c/White_and_yellow_flower.JPG" width="389"
+                height="250"></a>
+    </p>
+
+    <video width="100%" controls autoplay>
+        <source src="./success.mp4" type="video/mp4">
+        Your browser dose not support the video tag.
+    </video>
+
+    <p>
+        <a href="https://www.miami.com" target="_blank">miami.com</a><br>
+        <a href="https://www.lasvegas.com" target="_blank">lasvegas.com</a><br>
+        <a href="https://newyork.com" target="_blank">newyork.com</a><br>
+        <a href="https://newyork.com" target="_blank">newyork.com</a><br>
+    </p>
+
+    <table width="100%" border="1" bordercolor="red" cellspacing="2" cellpading="2">
+        <tr>
+            <td>
+                <table width="500" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+                    <tr>
+                        <td>sport</td>
+                        <td>Response</td>
+                    </tr>
+                    <tr>
+                        <td>Basketball</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Baseball</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Hookey</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>Soccer</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Tennis</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Football</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Other</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
 </html>
