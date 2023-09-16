@@ -4,7 +4,6 @@ main {
 
 .testimonial {
     font-size: 1.2rem;
-    margin: 3rem 0;
 }
 
 .testimonial:first-of-type {
@@ -12,10 +11,7 @@ main {
 }
 
 .testimonial__image-container {
-    width: 50%;
     min-width: 300px;
-    display: inline-block;
-    vertical-align: middle;
     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
 }
 
@@ -27,9 +23,6 @@ main {
 .testimonal__info {
     text-align: right;
     padding: 0.9rem;
-    display: inline-block;
-    vertical-align: middle;
-    width: 20%;
 }
 
 #customer-2.testimonial {
@@ -50,4 +43,22 @@ main {
 .testimonial__text {
     margin: 0.2rem;
     color: #212121;
+}
+
+@media (min-width: 40rem) {
+    .testimonial {
+        margin: 3rem 0;
+    }
+
+    .testimonial__image-container {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .testimonal__info  {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20%;
+    }
 }

@@ -76,11 +76,6 @@
     text-align: center;
 }
 
-.features__list--element {
-    display: inline-block;
-    width: 30%;
-}
-
 .features__image {
     background: #bbdefb;
     width: 128px;
@@ -144,5 +139,10 @@
         width: 30%;
         vertical-align: middle;
         min-width: 12rem;
+    }
+
+    .features__list--element {
+        display: inline-block;
+        width: 30%;
     }
 }

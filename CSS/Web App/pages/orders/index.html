@@ -4,12 +4,11 @@
 <head>
     <meta name="viewport" content="width= device-width, initial-scale= 1.0">
     <link rel="stylesheet" href="../../styles/shared.css">
-    <link rel="stylesheet" href="./plans.css">
-    <title>Plans</title>
+    <link rel="stylesheet" href="./oders.css">
+    <title>Orders</title>
 </head>
 
 <body>
-    <div class="background"></div>
     <header class="main-header">
         <div>
             <a href="../../index.html" class="main-header__logo ">
@@ -22,7 +21,7 @@
                     <a href="../customers/index.html">مشتریان</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#">تعرفه ها</a>
+                    <a href="../plans/index.html">تعرفه ها</a>
                 </li>
                 <li class="main-nav__item main-nav__item--account">
                     <a href="#">حساب کاربری</a>
@@ -32,26 +31,15 @@
     </header>
 
     <main>
-        <section class="plan" id="plus">
-            <a href="#">
-                <h2 class="plan__title">عنوان تعرفه</h2>
-                <h2 class="plan__badge">پیشنهاد ویژه</h2>
-                <p class="plan__info">توضیحات تعرفه</p>
-            </a>
-        </section>
-        <section class="plan" id="free">
-            <a href="#">
-                <h2 class="plan__title">عنوان تعرفه</h2>
-                <p class="plan__info">توضیحات تعرفه</p>
-            </a>
-        </section>
-        <div class="clearfix"></div>
-        <section class="plan" id="premium">
-            <a href="#">
-                <h2 class="plan__title">عنوان تعرفه</h2>
-                <p class="plan__info">توضیحات تعرفه</p>
-            </a>
-        </section>
+        <h1 class="form-title">ثبت سفارش</h1>
+        <form class="order-form">
+            <input type="text" id="first-name" placeholder="نام">
+            <input type="text" id="last-name" placeholder="نام خانوادگی">
+            <input type="text" id="email" placeholder="ایمیل">
+            <input type="password" id="password" placeholder="رمز عبور">
+            <button type="submit">ثبت سفارش</button>
+            
+        </form>
     </main>
 
     <footer class="main-footer">
@@ -66,5 +54,4 @@
             </ul>
         </nav>
     </footer>
-    
-    </html>
+</body>
