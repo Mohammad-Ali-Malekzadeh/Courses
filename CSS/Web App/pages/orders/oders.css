@@ -19,6 +19,9 @@ main {
     margin-top: 1rem;
     width: 100%;
     font: inherit;
+}
+
+.order-form input:not([type="checkbox"]) {
     border: 1px solid #90caf4;
     padding: 0.2rem;
     outline: none;
@@ -34,9 +37,24 @@ main {
 }
 
 .order-form input[type="checkbox"],
-.order-form input[type="checkbox"] + label {
+.order-form input[type="checkbox"]+label {
     display: inline-block;
     width: auto;
+}
+
+.order-form input[type="checkbox"] {
+    border: 1px solid #90caf4;
+    background: #ffffff;
+    width: 1rem;
+    height: 1rem;
+    /* -webkit-appearance: none; */
+    appearance: none;
+}
+
+.order-form input[type="checkbox"]:checked {
+    background: #90caf4;
+    border: 1px solid #1565c0;
+    outline: none;
 }
 
 .order-form button {
