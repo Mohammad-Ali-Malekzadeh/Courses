@@ -1,8 +1,3 @@
-const paragraphs = document.querySelectorAll('p')
-let findWord = paragraphs.forEach((item) => {
-    if (item.textContent.toLowerCase().includes('js')) {
-        item.remove()
-    }
+document.querySelector('#search-products').addEventListener('input', function (e) {
+    console.log(e.target.value)
 })
-
-console.log(findWord)
