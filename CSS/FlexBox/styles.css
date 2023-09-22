@@ -23,10 +23,9 @@ body {
     height: 700px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
 }
 
 .flex-container div {
@@ -41,6 +40,7 @@ body {
 }
 
 .box-3 {
+    align-self: flex-end;
     height: 150px;
 }
 

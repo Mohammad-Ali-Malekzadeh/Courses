@@ -31,11 +31,9 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-}
-
-.main-header>div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-header__logo {
@@ -43,21 +41,14 @@ body {
     text-decoration: none;
     font-size: 22px;
 }
-
-.main-nav {
-    display: inline-block;
-    width: calc(100% - 70px);
-    text-align: right;
-    vertical-align: middle;
-}
-
 .main-nav__items {
+    display: flex;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .main-nav__item {
-    display: inline-block;
     margin: 0 16px;
 }
 
@@ -89,14 +80,14 @@ body {
 }
 
 .main-footer__links {
+    display: flex;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 .main-footer__link {
-    display: inline-block;
     margin: 0 16px;
 }
 
