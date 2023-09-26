@@ -40,7 +40,7 @@ body {
 }
 
 .box-3 {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     height: 150px;
 }
 
@@ -51,8 +51,10 @@ body {
 
 .box-5 {
     width: 200px;
+    flex-shrink: 1;
 }
 
 .box-6 {
     width: 200px;
+    flex-shrink: 4;
 }
