@@ -11,24 +11,37 @@
     <form name="employment" action="send.php" method="post">
         <table width="600" border="1" cellspacing="2" cellpadding="2">
             <tr>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
+                <td>Employment Application</td>
                 <td></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>First Name:</td>
+                <td><input type="text" name="fname" maxlength="50"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname" maxlength="50"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>Position:</td>
+                <td>
+                    <select name="Position">
+                        <option value="AC">Accountant</option>
+                        <option value="RE">Receptionist</option>
+                        <option value="AD">Administrator</option>
+                        <option value="SU">Supervisor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience Level:</td>
+                <td>
+                    <select name="experience">
+                        <option value="AC">Entry Level</option>
+                        <option value="RE">Some Experience</option>
+                        <option value="AD">Very Experienced</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td></td>
