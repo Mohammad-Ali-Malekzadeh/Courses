@@ -10,6 +10,17 @@
 body {
     font-family: 'vazir-fd';
     margin: 0;
+    display: grid;
+    grid-template-rows: 2rem auto fit-contet(8rem);
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+main {
+    /* grid-row: 2 / 3; */
+    grid-area: main;
 }
 
 .backdrop {
@@ -41,6 +52,7 @@ body {
     text-decoration: none;
     font-size: 22px;
 }
+
 .main-nav__items {
     display: flex;
     list-style: none;
@@ -62,7 +74,7 @@ body {
     color: #ffffff;
 }
 
-.main-nav__item--account a{
+.main-nav__item--account a {
     background: #e3f2fd;
     color: #1565c0;
     padding: 8px 16px;
@@ -77,6 +89,8 @@ body {
 .main-footer {
     background: #424242;
     padding: 32px;
+    /* grid-row: 3 / 4; */
+    grid-area: footer;
 }
 
 .main-footer__links {

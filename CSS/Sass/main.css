@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Vazir-FD';
+    src: url('../web-app/fonts/Vazirmatn-Black.woff2');
+}
+
+html {
+    font-family: 'Vazir-FD';
+    font-size: 94.75%;
+}
+
+body {
+    margin: 0;
+    direction: rtl;
+}
+
+.highlights {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #1565c0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 3rem 0;
+    box-sizing: border-box;
+}
+
+.introduction {
+    border: 0.05rem solid #1565c0;
+    background: #bbdefb;
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.introduction p {
+    margin: 0;
+    color: #0d47a1;
+}
+
+.details {
+    border: 0.05rem solid #1565c0;
+    background: #bbdefb;
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem 0;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.section-header {
+    border-bottom: 0.05rem solid #1565c0;;
+}
+
+.section-header h1 {
+    margin: 0 0 1rem 0;
+    color: #0d47a1;
+}
+
+.links {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.links li {
+    margin: 0.2rem 0;
+    background: white;
+}
+
+.links .link {
+    text-decoration: none;
+    color: #1565c0;
+    display: block;    
+    padding: 0.2rem;
+    border: 0.05rem solid #1565c0;
+}
+
+.links .link:hover,
+.links .link:active {
+    color: #ffffff;
+    background: #1565c0;
+    border-color: #1565c0;
+}
+
+@media (min-width: 40rem) {
+    html {
+        font-size: 125%;
+    }
+
+    .container {
+        padding: 3rem 0;
+    }
+
+    .introduction,
+    .details {
+        width: 30rem;
+    }
+}
