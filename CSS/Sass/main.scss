@@ -1,3 +1,5 @@
+$main-color: #1565c0;
+
 @font-face {
     font-family: 'Vazir-FD';
     src: url('../web-app/fonts/Vazirmatn-Black.woff2');
@@ -16,20 +18,22 @@ body {
 .highlights {
     font-weight: bold;
     font-size: 1.4rem;
-    color: #1565c0;
+    color: $main-color;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex: {
+        direction: column;
+        wrap: nowrap;
+    }
     align-items: center;
     padding: 3rem 0;
     box-sizing: border-box;
 }
 
 .introduction {
-    border: 0.05rem solid #1565c0;
+    border: 0.05rem solid $main-color;
     background: #bbdefb;
     padding: 2rem;
     text-align: center;
@@ -43,7 +47,7 @@ body {
 }
 
 .details {
-    border: 0.05rem solid #1565c0;
+    border: 0.05rem solid $main-color;
     background: #bbdefb;
     padding: 1rem;
     text-align: center;
@@ -53,7 +57,7 @@ body {
 }
 
 .section-header {
-    border-bottom: 0.05rem solid #1565c0;
+    border-bottom: 0.05rem solid $main-color;
     ;
 }
 
@@ -77,17 +81,17 @@ body {
 
 .links .link {
     text-decoration: none;
-    color: #1565c0;
+    color: $main-color;
     display: block;
     padding: 0.2rem;
-    border: 0.05rem solid #1565c0;
+    border: 0.05rem solid $main-color;
 }
 
 .links .link:hover,
 .links .link:active {
     color: #ffffff;
-    background: #1565c0;
-    border-color: #1565c0;
+    background: $main-color;
+    border-color: $main-color;
 }
 
 @media (min-width: 40rem) {
