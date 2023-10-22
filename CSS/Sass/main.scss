@@ -1,5 +1,4 @@
-$main-color: #1565c0;
-
+@import '_variables';
 @font-face {
     font-family: 'Vazir-FD';
     src: url('../web-app/fonts/Vazirmatn-Black.woff2');
@@ -18,23 +17,25 @@ body {
 .highlights {
     font-weight: bold;
     font-size: 1.4rem;
-    color: $main-color;
+    color: map-get($colors, main);
 }
 
 .container {
     display: flex;
+
     flex: {
         direction: column;
         wrap: nowrap;
     }
+
     align-items: center;
     padding: 3rem 0;
     box-sizing: border-box;
 }
 
 .introduction {
-    border: 0.05rem solid $main-color;
-    background: #bbdefb;
+    border: $border;
+    background: map-get($colors, second);
     padding: 2rem;
     text-align: center;
     width: 90%;
@@ -47,8 +48,8 @@ body {
 }
 
 .details {
-    border: 0.05rem solid $main-color;
-    background: #bbdefb;
+    border: $border;
+    background: map-get($colors, second);
     padding: 1rem;
     text-align: center;
     margin: 2rem 0;
@@ -57,7 +58,7 @@ body {
 }
 
 .section-header {
-    border-bottom: 0.05rem solid $main-color;
+    border-bottom: $border;
     ;
 }
 
@@ -81,17 +82,17 @@ body {
 
 .links .link {
     text-decoration: none;
-    color: $main-color;
+    color: map-get($colors, main);
     display: block;
     padding: 0.2rem;
-    border: 0.05rem solid $main-color;
+    border: $border;
 }
 
 .links .link:hover,
 .links .link:active {
     color: #ffffff;
-    background: $main-color;
-    border-color: $main-color;
+    background: map-get($colors, main);
+    border-color: map-get($colors, main);
 }
 
 @media (min-width: 40rem) {

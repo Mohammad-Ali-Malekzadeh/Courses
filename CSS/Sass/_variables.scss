@@ -1,0 +1,5 @@
+$colors: (
+    main:#1565c0,
+    second:#bbdefb
+);
+$border: 0.05rem solid map-get($colors, main);
