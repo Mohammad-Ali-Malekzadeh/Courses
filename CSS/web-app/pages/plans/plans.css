@@ -8,7 +8,7 @@
 }
 
 main {
-    padding-top: 32px;
+    padding-top: 75px;
 }
 
 .plan {
@@ -20,6 +20,7 @@ main {
     border-radius: 3px;
     z-index: 0;
     position: relative;
+    overflow: hidden;
 }
 
 .plan a {
@@ -41,11 +42,16 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
+    margin: 0;
     font-size: 15px;
     background: #1e88e5;
     color: #ffffff;
     padding: 2px 8px;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-2rem);
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
+
 }
 
 .clearfix {

@@ -1,4 +1,9 @@
 @import '_variables';
+
+@mixin display-flex() {
+    display: flex;
+}
+
 @font-face {
     font-family: 'Vazir-FD';
     src: url('../web-app/fonts/Vazirmatn-Black.woff2');
@@ -21,8 +26,7 @@ body {
 }
 
 .container {
-    display: flex;
-
+    @include display-flex();
     flex: {
         direction: column;
         wrap: nowrap;
@@ -71,7 +75,7 @@ body {
     list-style: none;
     margin: 1rem 0 0 0;
     padding: 0;
-    display: flex;
+    @include display-flex();
     flex-direction: column;
 
     li {
