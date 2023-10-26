@@ -11,6 +11,7 @@ main {
 }
 
 .testimonial__image-container {
+    transform: skew(20deg);
     min-width: 300px;
     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
 }
