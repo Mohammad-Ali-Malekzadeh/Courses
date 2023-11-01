@@ -1,14 +1,53 @@
-/* const product = {
-    title: 'Book',
-    price: 79
+let products = []
+
+const filters = {
+    searchItem: '',
+    availableProducts: false
 }
 
-const productJSON = JSON.stringify(product)
+if (localStorage.getItem('products') !== null) {
+    products = JSON.parse(localStorage.getItem('products'))
+}
 
-localStorage.setItem('product', productJSON) */
+const renderProducts = function(products, filters) {
+    
+    let filteredProducts = products.filter(function(item) {
+        return item.title.toLowerCase().includes(filters.searchItem.toLowerCase())
+    })
+    filteredProducts = filteredProducts.filter(function(item) {
+        if(filters.availableProducts) {
+            return item.exist
+        } else {
+            return true
+        }
+    })
+    document.querySelector('#products').innerHTML = ''
+    filteredProducts.forEach(function(item) {
+        const productEl = document.createElement('p')
+        productEl.textContent = item.title
+        document.querySelector('#products').appendChild(productEl)
+    })
+}
 
-const productJSON = localStorage.getItem('product')
+renderProducts(products, filters)
 
-const product = JSON.parse(productJSON)
+document.querySelector('#search-products').addEventListener('input', function(e) {
+    filters.searchItem = e.target.value
+    renderProducts(products, filters)
+})
 
-console.log(`Title: ${product.title} - Price: ${product.price}`)
+document.querySelector('#add-product-form').addEventListener('submit', function(e) {
+    e.preventDefault()
+    products.push({
+        title: e.target.elements.productTitle.value,
+        exist: true
+    })
+    renderProducts(products, filters)
+    localStorage.setItem('products', JSON.stringify(products))
+    e.target.elements.productTitle.value = ''
+})
+
+document.querySelector('#available-products').addEventListener('change', function(e) {
+    filters.availableProducts = e.target.checked
+    renderProducts(products, filters)
+})
