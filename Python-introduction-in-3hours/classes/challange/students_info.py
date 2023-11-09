@@ -6,7 +6,7 @@ class Student:
         self.phisic = phisic
         self.chemistry = chemistry
     
-    # def gpa(self):
-    #     gpa = str((self.math + self.phisic + self.chemistry) / 3)
-    #     print(f'Dear {self.first_name} {self.last_name}, Your GPA is: {gpa}')
+    def gpa(self):
+        gpa = str((self.math + self.phisic + self.chemistry) / 3)
+        print(f'Dear {self.first_name} {self.last_name}, Your GPA is: {gpa}')
     

@@ -9,6 +9,22 @@ const saveProducts = function (products) {
     localStorage.setItem('products', JSON.stringify(products))
 }
 
+const removeProducts = function (id) {
+    const productIndex = products.findIndex(function (item) {
+        return item.id == id
+    })
+    if (productIndex > -1) {
+        products.splice(productIndex, 1)
+    }
+}
+
+const toggleProduct = function (id, exist) {
+    const productIndex = products.findIndex(function (item) {
+        return item.id == id
+    })
+    products[productIndex].exist = !exist
+}
+
 const renderProducts = function (products, filters) {
 
     let filteredProducts = products.filter(function (item) {
@@ -34,13 +50,24 @@ const createProductDOM = function (product) {
     const removeButton = document.createElement('button')
 
     checkbox.setAttribute('type', 'checkbox')
+    checkbox.checked = !product.exist
     productEl.appendChild(checkbox)
+    checkbox.addEventListener('change', function (e) {
+        toggleProduct(product.id ,e.target.checked)
+        saveProducts(products)
+        renderProducts(products, filters)
+    })
 
     productItem.textContent = product.title
     productEl.appendChild(productItem)
 
     removeButton.textContent = 'Remove'    
     productEl.appendChild(removeButton)
+    removeButton.addEventListener('click', function () {
+        removeProducts(product.id)
+        saveProducts(products)
+        renderProducts(products, filters)
+    })
 
     return productEl
 }

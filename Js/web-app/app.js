@@ -1,5 +1,3 @@
-console.log(uuid())
-
 let products = []
 
 const filters = {
@@ -21,7 +19,7 @@ document.querySelector('#search-products').addEventListener('input', function(e)
 document.querySelector('#add-product-form').addEventListener('submit', function(e) {
     e.preventDefault()
     products.push({
-        id: uuid(),
+        id: uuidv4(),
         title: e.target.elements.productTitle.value,
         exist: true
     })
