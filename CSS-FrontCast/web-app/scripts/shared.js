@@ -5,12 +5,12 @@ let modalCloseBTN = document.querySelector('.modal__action--neagative')
 
 for (let i = 0; i < selectPlanBTN.length; i++) {
     selectPlanBTN[i].addEventListener('click', () => {
-        modal.style.display = 'block'
-        backdrop.style.display = 'block'
+        modal.classList.add('open')
+        backdrop.classList.add('open')
     })
 }
 
 modalCloseBTN.addEventListener('click', () => {
-    modal.style.display = 'none'
-    backdrop.style.display = 'none'
+    modal.classList.remove('open')
+    backdrop.classList.remove('open')
 })

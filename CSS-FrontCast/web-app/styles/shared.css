@@ -10,8 +10,9 @@
 body {
     font-family: 'vazir-fd';
     margin: 0;
+    overflow-x: hidden;
     display: grid;
-    grid-template-rows: 2rem auto fit-contet(8rem);
+    grid-template-rows: 2rem auto fit-content(8rem);
     grid-template-areas:
         'header'
         'main'
@@ -32,6 +33,13 @@ main {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
+    transition: all 5s;
+}
+
+.open {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 .main-header {
@@ -72,6 +80,7 @@ main {
 .main-nav__item a:hover,
 .main-nav__item a:active {
     color: #ffffff;
+    transition: all 0.3s;
 }
 
 .main-nav__item--account a {
@@ -79,6 +88,10 @@ main {
     color: #1565c0;
     padding: 8px 16px;
     border-radius: 8px;
+}
+
+.main-nav__item--account {
+    animation: account 0.3s 2s 8;
 }
 
 .main-nav__item--account a:hover,
@@ -113,4 +126,13 @@ main {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #e0e0e0;
+}
+
+@keyframes account {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(10deg);  
+    }
 }

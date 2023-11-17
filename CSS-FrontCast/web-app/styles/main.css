@@ -94,7 +94,9 @@
 
 .modal {
     position: fixed;
-    display: none;
+    opacity: 0;
+    transform: translateY(-3rem);
+    transition: opacity 0.3s, transform 0.5s;
     z-index: 200;
     top: 20%;
     left: 30%;
