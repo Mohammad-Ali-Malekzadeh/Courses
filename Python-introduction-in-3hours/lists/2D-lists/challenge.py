@@ -22,8 +22,8 @@ def football_area(item):
     height = int(input(f"Please insert {item_word} Football Area Height: "))
 
     # Environment
-    environment = width * height
-    if environment == 8100:
+    environment = (width + height) * 2
+    if 300 <= environment <= 360:
         environments.append(f'Your {item_word} Football Area: is Standard.')
     else:
         environments.append(f'Your {item_word} Football Area: isn\'t Standard.')
