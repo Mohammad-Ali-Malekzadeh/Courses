@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Vazir-Regular-FD';
+    src: url('../fonts/Vazirmatn-Black.woff2');
+}
+
+body {
+    font-family: 'Vazir-Regular-FD';
+}
