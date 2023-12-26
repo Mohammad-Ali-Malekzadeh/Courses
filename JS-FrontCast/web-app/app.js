@@ -18,8 +18,9 @@ document.querySelector('#search-products').addEventListener('input', function(e)
 
 document.querySelector('#add-product-form').addEventListener('submit', function(e) {
     e.preventDefault()
+    const id = uuidv4()
     products.push({
-        id: uuidv4(),
+        id: id,
         title: e.target.elements.productTitle.value,
         exist: true
     })
