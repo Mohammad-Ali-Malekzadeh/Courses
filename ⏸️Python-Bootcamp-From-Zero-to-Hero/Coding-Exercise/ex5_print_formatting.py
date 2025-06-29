@@ -1,1 +1,0 @@
-'%s rules!' %'Python'
